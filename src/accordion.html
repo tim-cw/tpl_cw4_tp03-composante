@@ -1,0 +1,322 @@
+{% include '_partials/_header.html' %}
+
+<section class="split" id="intro">
+    <nav class="split__nav"><h2>Composante Accordion</h2></nav>
+
+    <div class="split__content">
+        <section class="split__section" id="intro">
+            <p>
+                Tu dois réaliser la composante selon les normes établies dans la documention. La structure HTML est
+                fournie, tu dois interprêter la documentation afin d'ajouter les classes préfixées, attributs data et
+                les lignes de css nécessaires au bon fonctionnement
+                <u>complet</u>
+                de la composante.
+            </p>
+            <p>
+                Tu
+                <u>dois</u>
+                utiliser les techniques vues cette session et pas quelque chose trouver en ligne utilisant d'autres
+                techniques (pas de getAttributes, hasAttributes, etc.)
+            </p>
+            <a href="https://demos.dectim.ca/cw4/timtools/accordion.html" target="_blank" class="btn">
+                Voir la documentation de Accordion
+            </a>
+        </section>
+
+        <section class="split__section">
+            <p>Comportement par défaut.</p>
+
+            <section class="accordion">
+                <!-- Question -->
+                <div class="accordion__container">
+                    <div class="accordion__header">
+                        <h3>Qu'est-ce que la MRC de Baie Ste-Catherine?</h3>
+                        <div class="header__icons">
+                            <svg class="icon icon--md icon-open">
+                                <use xlink:href="#icon-plus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion__content">
+                        La MRC de Baie Ste-Catherine est une municipalité régionale de comté située dans la région
+                        administrative de la Côte-Nord au Québec, Canada.
+                    </div>
+                </div>
+
+                <!-- Question -->
+                <div class="accordion__container">
+                    <div class="accordion__header">
+                        <h3>Quelle est la population de la MRC de Baie Ste-Catherine?</h3>
+                        <div class="header__icons">
+                            <svg class="icon icon--md icon-open">
+                                <use xlink:href="#icon-plus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion__content">
+                        Selon le recensement de 2016, la population de la MRC de Baie Ste-Catherine est de 3 229
+                        habitants.
+                    </div>
+                </div>
+
+                <!-- Question -->
+                <div class="accordion__container">
+                    <div class="accordion__header">
+                        <h3>Quels sont les principaux secteurs économiques de la MRC de Baie Ste-Catherine?</h3>
+                        <div class="header__icons">
+                            <svg class="icon icon--md icon-open">
+                                <use xlink:href="#icon-plus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion__content">
+                        Les principales industries de la MRC de Baie Ste-Catherine sont la pêche, le transport maritime,
+                        le tourisme et l'agriculture.
+                    </div>
+                </div>
+
+                <!-- Question -->
+                <div class="accordion__container">
+                    <div class="accordion__header">
+                        <h3>Quels sont les attraits touristiques de la MRC de Baie Ste-Catherine?</h3>
+                        <div class="header__icons">
+                            <svg class="icon icon--md icon-open">
+                                <use xlink:href="#icon-plus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion__content">
+                        La MRC de Baie Ste-Catherine est connue pour sa proximité avec les baleines, ce qui en fait une
+                        destination populaire pour les excursions d'observation des baleines. Elle compte également de
+                        nombreux sentiers de randonnée, des plages, des musées et des festivals tout au long de l'année.
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="split__section">
+            <p>
+                Comportement avec
+                <strong>data-not-closing.</strong>
+            </p>
+
+            <section class="accordion">
+                <!-- Question -->
+                <div class="accordion__container">
+                    <div class="accordion__header">
+                        <h3>Qu'est-ce que la MRC de Baie Ste-Catherine?</h3>
+                        <div class="header__icons">
+                            <svg class="icon icon--md icon-open">
+                                <use xlink:href="#icon-plus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion__content">
+                        La MRC de Baie Ste-Catherine est une municipalité régionale de comté située dans la région
+                        administrative de la Côte-Nord au Québec, Canada.
+                    </div>
+                </div>
+
+                <!-- Question -->
+                <div class="accordion__container">
+                    <div class="accordion__header">
+                        <h3>Quelle est la population de la MRC de Baie Ste-Catherine?</h3>
+                        <div class="header__icons">
+                            <svg class="icon icon--md icon-open">
+                                <use xlink:href="#icon-plus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion__content">
+                        Selon le recensement de 2016, la population de la MRC de Baie Ste-Catherine est de 3 229
+                        habitants.
+                    </div>
+                </div>
+
+                <!-- Question -->
+                <div class="accordion__container">
+                    <div class="accordion__header">
+                        <h3>Quels sont les principaux secteurs économiques de la MRC de Baie Ste-Catherine?</h3>
+                        <div class="header__icons">
+                            <svg class="icon icon--md icon-open">
+                                <use xlink:href="#icon-plus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion__content">
+                        Les principales industries de la MRC de Baie Ste-Catherine sont la pêche, le transport maritime,
+                        le tourisme et l'agriculture.
+                    </div>
+                </div>
+
+                <!-- Question -->
+                <div class="accordion__container">
+                    <div class="accordion__header">
+                        <h3>Quels sont les attraits touristiques de la MRC de Baie Ste-Catherine?</h3>
+                        <div class="header__icons">
+                            <svg class="icon icon--md icon-open">
+                                <use xlink:href="#icon-plus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion__content">
+                        La MRC de Baie Ste-Catherine est connue pour sa proximité avec les baleines, ce qui en fait une
+                        destination populaire pour les excursions d'observation des baleines. Elle compte également de
+                        nombreux sentiers de randonnée, des plages, des musées et des festivals tout au long de l'année.
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="split__section">
+            <p>
+                Comportement avec
+                <strong>data-auto-open.</strong>
+            </p>
+
+            <section class="accordion">
+                <!-- Question -->
+                <div class="accordion__container">
+                    <div class="accordion__header">
+                        <h3>Qu'est-ce que la MRC de Baie Ste-Catherine?</h3>
+                        <div class="header__icons">
+                            <svg class="icon icon--md icon-open">
+                                <use xlink:href="#icon-plus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion__content">
+                        La MRC de Baie Ste-Catherine est une municipalité régionale de comté située dans la région
+                        administrative de la Côte-Nord au Québec, Canada.
+                    </div>
+                </div>
+
+                <!-- Question -->
+                <div class="accordion__container">
+                    <div class="accordion__header">
+                        <h3>Quelle est la population de la MRC de Baie Ste-Catherine?</h3>
+                        <div class="header__icons">
+                            <svg class="icon icon--md icon-open">
+                                <use xlink:href="#icon-plus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion__content">
+                        Selon le recensement de 2016, la population de la MRC de Baie Ste-Catherine est de 3 229
+                        habitants.
+                    </div>
+                </div>
+
+                <!-- Question -->
+                <div class="accordion__container">
+                    <div class="accordion__header">
+                        <h3>Quels sont les principaux secteurs économiques de la MRC de Baie Ste-Catherine?</h3>
+                        <div class="header__icons">
+                            <svg class="icon icon--md icon-open">
+                                <use xlink:href="#icon-plus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion__content">
+                        Les principales industries de la MRC de Baie Ste-Catherine sont la pêche, le transport maritime,
+                        le tourisme et l'agriculture.
+                    </div>
+                </div>
+
+                <!-- Question -->
+                <div class="accordion__container">
+                    <div class="accordion__header">
+                        <h3>Quels sont les attraits touristiques de la MRC de Baie Ste-Catherine?</h3>
+                        <div class="header__icons">
+                            <svg class="icon icon--md icon-open">
+                                <use xlink:href="#icon-plus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion__content">
+                        La MRC de Baie Ste-Catherine est connue pour sa proximité avec les baleines, ce qui en fait une
+                        destination populaire pour les excursions d'observation des baleines. Elle compte également de
+                        nombreux sentiers de randonnée, des plages, des musées et des festivals tout au long de l'année.
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="split__section">
+            <p>
+                Comportement avec
+                <u>plusieurs</u>
+                <strong>data-auto-open.</strong>
+            </p>
+
+            <section class="accordion">
+                <!-- Question -->
+                <div class="accordion__container">
+                    <div class="accordion__header">
+                        <h3>Qu'est-ce que la MRC de Baie Ste-Catherine?</h3>
+                        <div class="header__icons">
+                            <svg class="icon icon--md icon-open">
+                                <use xlink:href="#icon-plus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion__content">
+                        La MRC de Baie Ste-Catherine est une municipalité régionale de comté située dans la région
+                        administrative de la Côte-Nord au Québec, Canada.
+                    </div>
+                </div>
+
+                <!-- Question -->
+                <div class="accordion__container">
+                    <div class="accordion__header">
+                        <h3>Quelle est la population de la MRC de Baie Ste-Catherine?</h3>
+                        <div class="header__icons">
+                            <svg class="icon icon--md icon-open">
+                                <use xlink:href="#icon-plus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion__content">
+                        Selon le recensement de 2016, la population de la MRC de Baie Ste-Catherine est de 3 229
+                        habitants.
+                    </div>
+                </div>
+
+                <!-- Question -->
+                <div class="accordion__container">
+                    <div class="accordion__header">
+                        <h3>Quels sont les principaux secteurs économiques de la MRC de Baie Ste-Catherine?</h3>
+                        <div class="header__icons">
+                            <svg class="icon icon--md icon-open">
+                                <use xlink:href="#icon-plus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion__content">
+                        Les principales industries de la MRC de Baie Ste-Catherine sont la pêche, le transport maritime,
+                        le tourisme et l'agriculture.
+                    </div>
+                </div>
+
+                <!-- Question -->
+                <div class="accordion__container">
+                    <div class="accordion__header">
+                        <h3>Quels sont les attraits touristiques de la MRC de Baie Ste-Catherine?</h3>
+                        <div class="header__icons">
+                            <svg class="icon icon--md icon-open">
+                                <use xlink:href="#icon-plus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion__content">
+                        La MRC de Baie Ste-Catherine est connue pour sa proximité avec les baleines, ce qui en fait une
+                        destination populaire pour les excursions d'observation des baleines. Elle compte également de
+                        nombreux sentiers de randonnée, des plages, des musées et des festivals tout au long de l'année.
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+</section>
+
+{% include '_partials/_footer.html' %}

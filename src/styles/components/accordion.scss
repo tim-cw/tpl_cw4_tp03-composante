@@ -1,0 +1,36 @@
+/* ==========================================================================
+   accordion / components
+   ========================================================================== */
+
+.accordion {
+    display: grid;
+    gap: var(--spacing-xs);
+}
+.accordion__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accordion__container {
+    cursor: pointer;
+    background: white;
+    border-radius: 4px;
+    color: var(--color-black);
+    padding: 20px;
+
+    h3 {
+        margin: 0;
+        transition: 0.3s all $ease-out-quad;
+    }
+    .icon-open {
+        transition: 0.5s all $ease-out-quad;
+    }
+
+    &:hover {
+        .icon-open {
+            transform: rotate(180deg);
+        }
+    }
+}
+.accordion__content {
+}
